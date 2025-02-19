@@ -990,6 +990,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Cam",
+            "id": "693b0e02-7aaf-4b29-bee2-bdecb44961f8",
+            "actions": [
+                {
+                    "name": "TakePic",
+                    "type": "Button",
+                    "id": "b8dd9d8c-6231-4690-a554-16a642bbdd22",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8874013d-aa5d-4456-b141-5e19b05c435c",
+                    "path": "<OculusTouchController>{RightHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TakePic",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
