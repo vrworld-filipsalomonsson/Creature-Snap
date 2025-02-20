@@ -10,6 +10,8 @@ public class Polaroid : MonoBehaviour
     private bool camOn = false;
     private int grabCount = 0;
     public PlayQuickSound playSound;
+    private Photo lastPhoto = null;
+    private float timer = 0;
 
     private void Awake()
     {
@@ -21,7 +23,10 @@ public class Polaroid : MonoBehaviour
         CreateRenderTexture();
         TurnOff();
     }
-
+    private void Update()
+    {
+        timer += Time.deltaTime;
+    }
     private void CreateRenderTexture()
     {
         RenderTexture newTexture = new RenderTexture(256, 256, 32, RenderTextureFormat.Default, RenderTextureReadWrite.sRGB);
@@ -33,10 +38,17 @@ public class Polaroid : MonoBehaviour
 
     public void TakePhoto()
     {
-        if (!camOn)
+        if (!camOn || timer < 1.5f)
             return;
+        timer = 0;
+        if (lastPhoto != null)
+        {
+            lastPhoto.GrabPhoto();
+            lastPhoto.ReleasePhoto();
+        }
         playSound.Play();
         Photo newPhoto = CreatePhoto();
+        lastPhoto = newPhoto;
         SetPhotoImage(newPhoto);
     }
 
