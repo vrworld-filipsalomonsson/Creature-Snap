@@ -1009,10 +1009,10 @@
                 {
                     "name": "",
                     "id": "8874013d-aa5d-4456-b141-5e19b05c435c",
-                    "path": "<OculusTouchController>{RightHand}/gripPressed",
+                    "path": "<XRController>{RightHand}/triggerPressed",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";XR",
                     "action": "TakePic",
                     "isComposite": false,
                     "isPartOfComposite": false

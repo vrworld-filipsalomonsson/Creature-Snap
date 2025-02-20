@@ -27,9 +27,9 @@ Transform:
   m_GameObject: {fileID: 1228295058904206121}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.006}
-  m_LocalScale: {x: 0.062, y: 0.002, z: 0.065}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0, z: 0.0104}
+  m_LocalScale: {x: 0.12566735, y: 0.00408537, z: 0.14675452}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 536370326379610223}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactorFilters: []
-  _maxInteractors: -1
+  _maxInteractors: 1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
   _pointableElement: {fileID: 4807627204562205247}
@@ -254,9 +254,9 @@ Transform:
   m_GameObject: {fileID: 4232683588705804158}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.0011, z: 0}
-  m_LocalScale: {x: 0.0055, y: 1, z: 0.0046}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0.0023, z: 0}
+  m_LocalScale: {x: 0.011, y: 2, z: 0.011}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 536370326379610223}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -366,7 +366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 7358e191-33b7-43ca-b066-b2f00531ac66
-  instanceId: 59abd064-ae81-44b8-b414-7e8328f42071
+  instanceId: bfd06722-5130-4837-a048-ae67e3a5a755
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -393,8 +393,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
@@ -417,8 +417,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.055, y: 0.003, z: 0.065}
-  m_Center: {x: 0, y: 0, z: -0.0045}
+  m_Size: {x: 0.13, y: 0.003, z: 0.15}
+  m_Center: {x: 0, y: 0, z: 0.01}
 --- !u!114 &7169681062562327553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,13 +465,25 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 836402668477361431}
+        m_TargetAssemblyTypeName: Photo, Assembly-CSharp
+        m_MethodName: GrabPhoto
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 836402668477361431}
         m_TargetAssemblyTypeName: Photo, Assembly-CSharp
-        m_MethodName: EnablePhysics
+        m_MethodName: ReleasePhoto
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
