@@ -25,7 +25,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - BACKFACE_NORMAL_MODE_NONE
+  - BACKFACE_NORMAL_MODE_MIRROR
   - _WINDQUALITY_BEST
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -108,10 +108,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - BACKFACE_NORMAL_MODE: 2
+    - BACKFACE_NORMAL_MODE: 1
     - EFFECT_BILLBOARD: 0
     - EFFECT_EXTRA_TEX: 1
-    - _AlphaClipThreshold: 0.799
+    - _AlphaClipThreshold: 0.33
     - _BumpScale: 1
     - _CUSTOMCOLORSTINTING: 0
     - _CUSTOMWIND: 1
@@ -156,7 +156,7 @@ Material:
     - _WINDQUALITY: 4
     - _WindDensity: 1
     - _WindMovement: 1
-    - _WindQuality: 1
+    - _WindQuality: 0
     - _WindStrength: 0.5
     - _ZWrite: 0
     - __dirty: 0
