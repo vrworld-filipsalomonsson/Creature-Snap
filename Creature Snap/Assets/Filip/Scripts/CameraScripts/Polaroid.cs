@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class Polaroid : MonoBehaviour
 {
@@ -9,9 +10,11 @@ public class Polaroid : MonoBehaviour
 
     private bool camOn = false;
     private int grabCount = 0;
-    public PlayQuickSound playSound;
     private Photo lastPhoto = null;
     private float timer = 0;
+
+    public GameObject flash;
+    public PlayQuickSound playSound;
 
     private void Awake()
     {
@@ -46,12 +49,18 @@ public class Polaroid : MonoBehaviour
             lastPhoto.GrabPhoto();
             lastPhoto.ReleasePhoto();
         }
+        flash.SetActive(true);
+        StartCoroutine(StopFlash());
         playSound.Play();
         Photo newPhoto = CreatePhoto();
         lastPhoto = newPhoto;
         SetPhotoImage(newPhoto);
     }
-
+    private IEnumerator StopFlash()
+    {
+        yield return new WaitForSeconds(0.5f);
+        flash.SetActive(false);
+    }
     private Photo CreatePhoto()
     {
         GameObject photoObject = Instantiate(photoPrefab, spawnLocation.position, spawnLocation.rotation, transform);
