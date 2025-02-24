@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Filip/Scenes/NewTutorial.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Samples/Meta Movement/72.0.0/Advanced Samples/Scenes/MovementLocomotion.unity
+    guid: dea6f4ca12e28344ebca139bbdb57ce2
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 7da2ba504e2a816459546af9ee5225cf, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

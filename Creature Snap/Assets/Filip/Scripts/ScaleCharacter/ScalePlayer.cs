@@ -2,14 +2,12 @@ using UnityEngine;
 
 public class ScalePlayer : MonoBehaviour
 {
-    public float playerHeight;
-    public float baseHeight = 1.84f;
-    public float playerScale;
-    public Transform playerModel;
-    public void SetScaleFromHeight()
-    {
-        float scaleFactor = playerHeight / baseHeight;
-        playerModel.localScale = new Vector3(scaleFactor, scaleFactor, scaleFactor);
-    }
+    public Transform playerModel; // Assign your player model here
+    public float baseHeight = 1.75f; // Reference height in meters
 
+    public void SetPlayerHeight(float userHeight)
+    {
+        float scale = userHeight / baseHeight;
+        playerModel.localScale = new Vector3(scale, scale, scale);
+    }
 }
