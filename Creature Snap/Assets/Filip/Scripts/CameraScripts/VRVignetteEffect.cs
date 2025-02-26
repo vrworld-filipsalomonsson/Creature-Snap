@@ -28,18 +28,14 @@ public class VRVignetteEffect : MonoBehaviour
 
     void Update()
     {
-        // Calculate movement speed
         float speed = (playerTransform.position - lastPosition).magnitude / Time.deltaTime;
         lastPosition = playerTransform.position;
 
-        // Adjust vignette based on speed
         targetVignette = Mathf.Clamp(speed * 5, 0f, 1);
         vignette.intensity.value = Mathf.Lerp(vignette.intensity.value, targetVignette, Time.deltaTime * 5f);
 
-        // Determine if player is moving
-        bool currentlyMoving = speed > 0.1f; // Adjust threshold if needed
+        bool currentlyMoving = speed > 0.1f; 
 
-        // Change material if movement state changes
         if (currentlyMoving != isMoving)
         {
             isMoving = currentlyMoving;
