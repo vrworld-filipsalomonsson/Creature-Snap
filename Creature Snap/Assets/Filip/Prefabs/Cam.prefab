@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3965580411164228861}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 3208784849074416997}
   - component: {fileID: 2414498351623494535}
   - component: {fileID: 6663673594017453692}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FlashParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4879,7 +4879,7 @@ GameObject:
   - component: {fileID: 1187505385552657577}
   - component: {fileID: 6275329148613375483}
   - component: {fileID: 654075128301946786}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: '[BuildingBlock] HandGrab'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5020,7 +5020,7 @@ GameObject:
   - component: {fileID: 2198826858508317156}
   - component: {fileID: 3751542790693197509}
   - component: {fileID: 2745550589065466944}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Leica_M9_Digital_Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5165,7 +5165,7 @@ GameObject:
   - component: {fileID: 8481385044011210706}
   - component: {fileID: 7804354290625468925}
   - component: {fileID: 2317660015619153809}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5487,7 +5487,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8918662076667288173}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnLocation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5520,7 +5520,7 @@ GameObject:
   - component: {fileID: 2511153325388678698}
   - component: {fileID: 3329768425415688500}
   - component: {fileID: 6648170084527076035}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5607,7 +5607,7 @@ GameObject:
   - component: {fileID: 4607627546235956214}
   - component: {fileID: 2212632222088105301}
   - component: {fileID: 4846287348158547567}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PictureHole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5714,7 +5714,7 @@ GameObject:
   - component: {fileID: 3665678706687175779}
   - component: {fileID: 7841931588985410906}
   - component: {fileID: 1165342351642458275}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FlashjLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5835,7 +5835,7 @@ GameObject:
   - component: {fileID: 2917249799132332934}
   - component: {fileID: 8957937383975952274}
   - component: {fileID: 2673028126418675517}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ViewFinder_Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5889,7 +5889,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 10
+  far clip plane: 500
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -5932,7 +5932,7 @@ MonoBehaviour:
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 0
-  m_Antialiasing: 1
+  m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
