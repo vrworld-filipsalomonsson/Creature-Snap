@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using Oculus.Interaction;
 
 public class Polaroid : MonoBehaviour
 {
@@ -16,7 +15,6 @@ public class Polaroid : MonoBehaviour
 
     public GameObject flash;
     public PlayQuickSound playSound;
-    public SnapInteractable snapInteractable;
     private void Awake()
     {
         renderCamera = GetComponentInChildren<Camera>();
@@ -90,7 +88,6 @@ public class Polaroid : MonoBehaviour
         grabCount++;
         if (grabCount > 1)
         {
-            snapInteractable.enabled = false;
             camOn = true;
             renderCamera.enabled = true;
             screenRenderer.material.color = Color.white;
@@ -102,7 +99,6 @@ public class Polaroid : MonoBehaviour
         grabCount--;
         if (grabCount < 2)
         {
-            snapInteractable.enabled = true;
             camOn = false;
             renderCamera.enabled = false;
             screenRenderer.material.color = Color.black;

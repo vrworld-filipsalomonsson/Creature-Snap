@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8517667284591518395}
   - component: {fileID: 211970227364757944}
   - component: {fileID: 3010486099430442065}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Paper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 4807627204562205247}
   - component: {fileID: 4511323544821666314}
   - component: {fileID: 2968465698189828616}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: '[BuildingBlock] HandGrab'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 529761744174457366}
   - component: {fileID: 3993983246841169830}
   - component: {fileID: 5612129916828962132}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Film
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 7169681062562327553}
   - component: {fileID: 836402668477361431}
   - component: {fileID: 4192876459366165023}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Photograph
   m_TagString: Untagged
   m_Icon: {fileID: 0}
