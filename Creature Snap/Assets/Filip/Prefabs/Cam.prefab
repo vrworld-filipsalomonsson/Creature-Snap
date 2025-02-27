@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3965580411164228861}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 3208784849074416997}
   - component: {fileID: 2414498351623494535}
   - component: {fileID: 6663673594017453692}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: FlashParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4879,7 +4879,7 @@ GameObject:
   - component: {fileID: 1187505385552657577}
   - component: {fileID: 6275329148613375483}
   - component: {fileID: 654075128301946786}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: '[BuildingBlock] HandGrab'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5020,7 +5020,7 @@ GameObject:
   - component: {fileID: 2198826858508317156}
   - component: {fileID: 3751542790693197509}
   - component: {fileID: 2745550589065466944}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Leica_M9_Digital_Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5165,7 +5165,7 @@ GameObject:
   - component: {fileID: 8481385044011210706}
   - component: {fileID: 7804354290625468925}
   - component: {fileID: 2317660015619153809}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Cam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5187,6 +5187,7 @@ Transform:
   m_Children:
   - {fileID: 4608311927871792304}
   - {fileID: 3632293287309246748}
+  - {fileID: 7480630407534172461}
   - {fileID: 2917249799132332934}
   - {fileID: 8918662076667288173}
   - {fileID: 3965580411164228861}
@@ -5478,6 +5479,91 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &5627745714896828749
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7480630407534172461}
+  - component: {fileID: 4121352664346007187}
+  - component: {fileID: 8289667229357648145}
+  m_Layer: 9
+  m_Name: SnapInteractor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7480630407534172461
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5627745714896828749}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1981705540207908682}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4121352664346007187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5627745714896828749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2756c251a8363df4f9d4b30ee6414bd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 1187505385552657577}
+  _rigidbody: {fileID: 1880188928057458577}
+  _distanceThreshold: 0.01
+  _snapPoseTransform: {fileID: 0}
+  _defaultInteractable: {fileID: 0}
+  _timeOutInteractable: {fileID: 0}
+  _timeOut: 0
+--- !u!114 &8289667229357648145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5627745714896828749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923bf866a415f014681bb04d752ccb91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 1880188928057458577}
+  cam: {fileID: 3919551561599047922}
+  snapInteractable: {fileID: 0}
+  grabbable: {fileID: 1187505385552657577}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6205918904955156355
 GameObject:
   m_ObjectHideFlags: 0
@@ -5487,7 +5573,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8918662076667288173}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: SpawnLocation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5520,7 +5606,7 @@ GameObject:
   - component: {fileID: 2511153325388678698}
   - component: {fileID: 3329768425415688500}
   - component: {fileID: 6648170084527076035}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5607,7 +5693,7 @@ GameObject:
   - component: {fileID: 4607627546235956214}
   - component: {fileID: 2212632222088105301}
   - component: {fileID: 4846287348158547567}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: PictureHole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5714,7 +5800,7 @@ GameObject:
   - component: {fileID: 3665678706687175779}
   - component: {fileID: 7841931588985410906}
   - component: {fileID: 1165342351642458275}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: FlashjLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5835,7 +5921,7 @@ GameObject:
   - component: {fileID: 2917249799132332934}
   - component: {fileID: 8957937383975952274}
   - component: {fileID: 2673028126418675517}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: ViewFinder_Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
